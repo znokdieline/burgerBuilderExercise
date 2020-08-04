@@ -1,6 +1,16 @@
 export { 
     addIngredient,
-    removeIngredient } 
+    removeIngredient,
+    setIngredients,
+    fetchIngredientsFailed,
+    initIngredients
+ } 
     from './BurgerBuilder';
 
-export {} from './order';
+export {
+    purchaseBurgerBurgerSuccess,
+    purchaseBurgerFail,
+    purchaseBurger,
+    purchaseInit,
+    fetchOrders
+} from './Order.js';
