@@ -14,3 +14,10 @@ export {
     purchaseInit,
     fetchOrders
 } from './Order.js';
+
+export {
+    auth,
+    logout,
+    setAuthRedirectPath,
+    authCheckState
+} from './Auth';
