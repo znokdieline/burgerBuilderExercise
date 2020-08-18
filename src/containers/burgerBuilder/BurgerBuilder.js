@@ -14,14 +14,13 @@ import * as actions from '../../Store/Actions/index';
 
 
 
-class BurgerBuilder extends Component{
+export class BurgerBuilder extends Component{
     //se va a manejar el estado de los ingredientes
     state = { 
         purchasing: false,
     };
 
     componentDidMount = () => {
-        console.log('Estos son los props en burger builder => ', this.props);
         this.props.onInitIngredients();   
     };
 

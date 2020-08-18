@@ -6,7 +6,6 @@ import './burger.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient'
 
 const Burger = (props) => {
-    console.log('estos son los props en Burger => ', props)
     let transformedIngredients =
     Object.keys( props.ingredients )
     .map( igKey => {
@@ -22,7 +21,6 @@ const Burger = (props) => {
         transformedIngredients = <p>Please start adding elements</p>
     }
 
-    console.log(transformedIngredients);
 
     return(
         <div className={'Burger'}>
