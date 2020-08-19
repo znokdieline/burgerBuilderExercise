@@ -1,3 +1,9 @@
+
+Se usó redux y fire base.
+
+## Deploy
+firebase https://react-my-burger-7d339.firebaseapp.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
