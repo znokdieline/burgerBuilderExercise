@@ -12,12 +12,21 @@ export {
     purchaseBurgerFail,
     purchaseBurger,
     purchaseInit,
-    fetchOrders
+    fetchOrders,
+    purchaseBurgerStart,
+    fetchOrdersSuccess,
+    fetchOrdersStart,
+    fetchOrdersFail
 } from './Order.js';
 
 export {
     auth,
     logout,
     setAuthRedirectPath,
-    authCheckState
+    authCheckState,
+    logoutSucceed,
+    authStart,
+    authSuccess,
+    authFail,
+    checkAuthTimeout
 } from './Auth';
