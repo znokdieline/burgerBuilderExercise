@@ -24,7 +24,10 @@ export function* authUserSaga (action){
             password: action.password,
             returnSecureToken: true
         };
-        
+        let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBJsaEqi9-aipokmwddc1CI5MaiL-fkHps'
+        if(!action.isSignup){
+            url= 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBJsaEqi9-aipokmwddc1CI5MaiL-fkHps';
+        }
         try{
             const response = yield axios.post( url, autData)
             const expirationData = yield new Date(new Date().getTime() + response.data.expiresIn * 1000 );

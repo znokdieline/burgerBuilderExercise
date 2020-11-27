@@ -30,7 +30,7 @@ const removeIngredient = (state, action) => {
     const updatedIng = updateObject(state.ingredients, updateIng);
     const updateSt = {
         ingredients:updatedIng,
-        totalPrice: state.totalPrice + INGREDIENT_PRICES[action.ingredientName],
+        totalPrice: state.totalPrice - INGREDIENT_PRICES[action.ingredientName],
         building: true
     }
     return updateObject(state, updateSt);

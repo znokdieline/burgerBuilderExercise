@@ -1,15 +1,13 @@
 /* eslint-disable default-case */
-import React, {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 //imports
 import './BurgerIngredient.css';
 
-class BurgerIngredient extends Component {
+const BurgerIngredient = props => {
+    let ingredient = null;
 
-    render(){
-        let ingredient = null;
-
-        switch (this.props.type) {
+    switch (props.type) {
         case ('bread-bottom'):
             ingredient = <div className={'BreadBottom'}></div>;
             break;
@@ -21,23 +19,22 @@ class BurgerIngredient extends Component {
                 </div>
             )
             break;
-        case('meat'):
+        case ('meat'):
             ingredient = <div className={'Meat'}></div>;
             break;
-        case('cheese'):
+        case ('cheese'):
             ingredient = <div className={'Cheese'}></div>;
             break;
-        case('salad'):
+        case ('salad'):
             ingredient = <div className={'Salad'}></div>;
             break;
-        case('bacon'):
+        case ('bacon'):
             ingredient = <div className={'Bacon'}></div>
             break;
         default:
             ingredient = null;
     };
     return ingredient;
-    }
 };
 
 BurgerIngredient.propTypes = {

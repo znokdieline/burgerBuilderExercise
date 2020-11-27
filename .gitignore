@@ -11,3 +11,5 @@ yarn-debug.log*
 yarn-error.log*
 
 /src/Store/Reducers/auth.js
+
+.DS_Store
